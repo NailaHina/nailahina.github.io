@@ -1,49 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Founder — Engr Dr Naila Hina | NCN</title>
-  <style>
-    :root {
-      --emerald: #046307;
-      --gold: #D4AF37;
-      --white-bg: #fafaf5;
-      --text-color: #1f1f1f;
-    }
-    body { font-family: Georgia, 'Times New Roman', serif; margin:0; padding:0; background: var(--white-bg); color: var(--text-color); line-height:1.6; }
-    header { background: var(--emerald); color: var(--gold); text-align:center; padding: 2rem 1rem; }
-    nav { background: var(--gold); text-align:center; padding:0.5rem 0; }
-    nav a { color: var(--emerald); text-decoration:none; font-weight:bold; margin:0 1rem; }
-    nav a:hover { text-decoration:underline; }
-    main { max-width:900px; margin:0 auto; padding:2rem; }
-    h2 { color: var(--emerald); margin-bottom:1rem; }
-    section { margin-bottom:2rem; }
-    img { max-width:180px; border-radius:50%; border:3px solid var(--gold); margin-bottom:1rem; }
-    footer { background: var(--emerald); color: var(--gold); text-align:center; padding:2rem; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founder — NCN</title>
+<style>
+:root {
+  --emerald: #046307;
+  --gold: #D4AF37;
+  --white-bg: #fafaf5;
+  --text-color: #1f1f1f;
+}
+
+/* RESET */
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; background: var(--white-bg); color: var(--text-color); line-height:1.7; }
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, var(--emerald), #145c43);
+  color: var(--gold);
+  padding: 20px 40px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-brand .logo-box {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header-brand .brand-text h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header-brand .brand-text span {
+  font-size: 13px;
+  color: #f1e6b2;
+}
+
+/* NAV */
+nav {
+  background: var(--gold);
+  text-align:center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: var(--emerald);
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 12px;
+}
+
+nav a:hover { text-decoration: underline; }
+
+/* MAIN */
+main { max-width:900px; margin:40px auto; padding:20px; }
+
+main section { margin-bottom:40px; }
+
+main h2 { color: var(--emerald); margin-bottom:1rem; }
+
+main img {
+  display:block;
+  max-width:200px;
+  border-radius:50%;
+  border:3px solid var(--gold);
+  margin:0 auto 1rem auto;
+}
+
+/* FOOTER */
+footer {
+  background: var(--emerald);
+  color: var(--gold);
+  text-align:center;
+  padding:25px 20px;
+  font-size:0.9rem;
+}
+</style>
 </head>
 <body>
 
 <header>
-  <h1>Engr Dr Naila Hina</h1>
-  <h2>Founder & Editor-in-Chief, NCN</h2>
+  <div class="header-brand">
+    <div class="logo-box">NCN</div>
+    <div class="brand-text">
+      <h1>NCN</h1>
+      <span>Naila Hina Cultural Media Network</span>
+    </div>
+  </div>
 </header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="founder.html">Founder</a>
-  <a href="vision.html">Vision</a>
-  <a href="publications.html">Publications</a>
-  <a href="recognition.html">Recognition</a>
-  <a href="presence.html">Media & Presence</a>
-  <a href="contact.html">Contact</a>
+  <a href="/index.html">Home</a>
+  <a href="/ncn_founder_page.html">Founder</a>
+  <a href="/ncn_vision_page.html">Vision</a>
+  <a href="/ncn_publications_page.html">Publications</a>
+  <a href="/ncn_recognition_page.html">Recognition</a>
+  <a href="/ncn_presence_page.html">Media & Presence</a>
+  <a href="/contact.html">Contact</a>
 </nav>
 
 <main>
   <section>
-    <img src="images/naila-portrait.jpg" alt="Engr Dr Naila Hina">
-    <p>Engr Dr Naila Hina is a former engineering university instructor, international award-winning author of over 100 multilingual books, and a poet from Karachi, Pakistan. Her work bridges science, literature, and humanitarian awareness.</p>
+    <img src="/images/naila-emerald-gold.jpg" alt="Engr Dr Naila Hina">
+    <p>Engr Dr Naila Hina is a former engineering university instructor, international award-winning author of over 860 multilingual books, and a poet from Karachi, Pakistan. Her work bridges science, literature, and humanitarian awareness.</p>
   </section>
 
   <section>
@@ -53,7 +128,7 @@
 
   <section>
     <h2>Literary & Cultural Contributions</h2>
-    <p>Dr Hina has authored a wide array of works including <em>Bahisht e Char Saat</em>, <em>Shadows of the Sun</em>, <em>Cosmic Dreams</em>, <em>Labor of Love</em>, <em>Hayat e Javedan</em>, <em>Fragrance of a Cave Girl</em>, and more. She is the first person to translate Imru al Qays' Arabic poetry into Urdu and pioneered the Gammo style of poetry.</p>
+    <p>Dr Hina has authored works including <em>Bahisht e Char Saat</em>, <em>Shadows of the Sun</em>, <em>Cosmic Dreams</em>, <em>Labor of Love</em>, <em>Hayat e Javedan</em>, <em>Fragrance of a Cave Girl</em>, and more. She is the first person to translate Imru al Qays' Arabic poetry into Urdu and pioneered the Gammo style of poetry.</p>
   </section>
 
   <section>
@@ -63,7 +138,7 @@
 
   <section>
     <h2>Global Recognition</h2>
-    <p>Dr Hina has received numerous awards and accolades for literature, peace, and humanitarian contributions, and her poems have been published and translated internationally, appearing in newspapers, blogs, and YouTube presentations worldwide.</p>
+    <p>Dr Hina has received numerous awards and accolades for literature, peace, and humanitarian contributions, and her poems have been published and translated internationally.</p>
   </section>
 </main>
 
